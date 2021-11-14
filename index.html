@@ -316,12 +316,67 @@
             </a></li>
     </ul>
     </div>
+    <div class="subscribe">
+        <p class="subscribe-title">подпишитесь на рассылку</p>
+        <form name="subscribe" class="subscribe-form">
+            <input type="email" name="email" placeholder="E-mail" class="subscribe-mail">
+            <button type="submit" class="submit-btn">Подписаться <svg><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
+        </form>
+    </div>
     </div>
     </footer>
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close-modal" data-modal-close></button>
+            <form name="user-info" class="user-info-form">
+                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <div class="form-field">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" class="field" id="name">
+                        <svg class="form-field-icon">
+                            <!--        ПОПРОБОВАТЬ ВОТ ТАК
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <span>
+                        <input type="tel" name="tel" class="field" id="tel">
+                        <svg class="form-field-icon">
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                        </span>
+                    </div>
+                             -->
+                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" class="field" id="tel">
+                        <svg class="form-field-icon">
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="mail">Почта</label>
+                            
+                            <input type="email" name="mail" class="field" id="mail">
+                            <svg class="form-field-icon">
+                                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                            </svg>
+                    </div>
+                    
+                    <label class="form-field">
+                        Комментарий
+                        <textarea name="comment" id="comment" rows="5" placeholder="Введите текст" class="user-info-comment field"></textarea>
+                    </label>
+                    
+                    <label for="policy" class="policy-text"> <input type="checkbox" name="policy" id="policy" class="policy" checked>
+                        <span class="policy-check"></span> Соглашаюсь с рассылкой и принимаю <pre> </pre> <a href=""> Условия договора</a></label>
+                        
+                        
+                    
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+            <button class="close-modal" data-modal-close><svg><use href="./images/icons.svg#icon-close-modal"></use></svg></button>
         </div>
     </div>
     <script src="js/modal.js"></script>
